@@ -1,28 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
-    <style>
-        h1{font-size:18px;color:#333;font-weight: bold;}
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Poppins:wght@300;400;500;600&family=Raleway:wght@300;400;500;600&display=swap">
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Sun, home</title>
 </head>
 <body>
-    <header>
-        <h1>sun의 개발 </h1>
-    </header>
-    <section>
-        <article>
-            <div class="content">
-                내용 구상중
-            </div>
-        </article>
-    </section>
-    <footer>
-        hi, sun!!
-        portfolio start
-    </footer>
+  <div class="wrap">
+    <div class="contaienr">
+      <nav class="navbar in deactive">
+				<div class="inner">
+					<div class="logo">
+						<a href="./index.html">Sun,</a>
+						<!-- <a href="./index.html">
+							<img src="./img/sun_logo2.png" alt="">
+						</a> -->
+					</div>
+					<ul class="navbar__menu">
+						<li>
+							<a href="#home">home</a>
+						</li>
+						<li>
+							<a href="#about">about</a>
+						</li>
+						<li>
+							<a href="#work">work</a>
+						</li>
+						<li>
+							<a href="#life">life</a>
+						</li>
+						<li>
+							<a href="#contact">contact</a>
+						</li>
+					</ul>
+					<a href="#" class="navbar__toggleBtn">
+						<i class="fas fa-bars"></i>
+					</a>
+				</div>
+			</nav>
+			<div class="content-wrapper">
+				<div class="fixed-icon">
+					<ul>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-github"></i></a></li>
+					</ul>
+				</div>
+				<section id="home" class="swiper-container slider parallax-container parallax">
+					<div class="swiper-wrapper slider-wrap paralax-image">
+						<div class="swiper-slide img-slider-item bg1">
+							<div class="text-box">
+								<span class="h1">Hi, my name is</span>
+								<span class="name">Eun Hye Lee.</span>
+								<span class="sub">I am a front-end developer.</span>
+							</div>
+							<div class="scroll-downs">
+								<div class="mousey">
+									<div class="scroller"></div>
+								</div>
+							</div>
+						</div>
+						<div class="swiper-slide img-slider-item bg2">
+							<div class="text-box">
+								<span class="h1">긍정적인 마인드의 소유자</span>
+								<span class="name">Eun Hye Lee.</span>
+								<span class="sub">I am a front-end developer.</span>
+							</div>
+							<div class="scroll-downs">
+								<div class="mousey">
+									<div class="scroller"></div>
+								</div>
+							</div>
+						</div>
+				</section>
+				<section id="about" class="about-content">
+					<h2>About</h2>
+					<div class="flex">
+						<div class="img">
+
+						</div>
+						<div class="text">
+							<span class="title">안되면 <strong>될. 때. 까. 지.</strong></span>
+							<span>성장하는 퍼블리셔 <strong>이은혜</strong>입니다.</span>
+						</div>
+					</div>
+				</section>
+				<section id="work" class="work-content">
+					<h2>Work</h2>
+					<div class="swiper work-swiper">
+						<div class="swiper-wrapper">
+						  <div class="swiper-slide work-item">
+
+						  </div>
+						  <div class="swiper-slide work-item">Slide 2</div>
+						  <div class="swiper-slide work-item">Slide 3</div>
+						</div>
+						<div class="swiper-pagination"></div>
+					  </div>
+				</section>
+				<section id="life" class="life-content">
+					
+				</section>
+				<section id="contact" class="contact-content">
+					
+				</section>
+			</div>
+    </div>
+  </div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/main.js"></script>
+	<script>
+		AOS.init();
+
+		new Swiper('.swiper-container', {
+			slidesPerView: 'auto',
+			effect: 'fade',
+			spaceBetween: 30,
+			loop: true,
+			autoplay: {
+				delay: 3000,
+			},
+		});
+		var swiper = new Swiper(".work-swiper", {
+        direction: "vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+	</script>
 </body>
 </html>

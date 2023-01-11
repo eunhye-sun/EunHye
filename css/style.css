@@ -117,7 +117,7 @@ body {width: 100%;height: 100%;font-family: 'Open Sans', sans-serif;overflow-x: 
 
 .content-wrapper .contact-content {height: 100vh;background-color: #ECE5C7;padding: 80px;box-sizing: border-box;}
 .content-wrapper .contact-content::before {content:'';display:block;position:absolute;left: 40px;top: 80px;bottom: 0; width:1px;height: 100%;background-color: white;}
-.content-wrapper .contact-content h2 {position: relative;margin:50px 0; color: #fff;font-size: 36px;text-align: right;}
+.content-wrapper .contact-content h2 {position: relative;margin:50px 0; color: #010101;font-size: 36px;text-align: right;}
 .content-wrapper .contact-content h2::after {content: '';display: block;position: absolute;right: 185px;top: 20px;margin-right: -25px;bottom: 0;width: 100%;height: 1px;background-color: white;overflow: hidden;}
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/

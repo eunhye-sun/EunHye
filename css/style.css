@@ -11,7 +11,7 @@ body {width: 100%;height: 100%;font-family: 'Open Sans', sans-serif;overflow-x: 
 .in {padding: 0 80px;box-sizing: border-box;}
 .flex {display: flex;align-items: center;justify-content: space-between;}
 
-/* nav오류*/ 
+/* nav */
 /* .navbar {z-index: 10000;position: fixed;top: 0;left: 0;right: 0;padding: 25px 80px;display: flex;justify-content: space-between;align-items: center;}
 .navbar .inner {display: flex;justify-content: space-between;width: 100%;align-items: center;}
 .navbar .inner .logo{position:relative;flex: 1;margin: 0 20px 0 0;display: flex;align-items: center;justify-content: space-between; }
@@ -164,16 +164,8 @@ body {width: 100%;height: 100%;font-family: 'Open Sans', sans-serif;overflow-x: 
 .content-wrapper .contact-content .contact-me .right .form-group textarea{height:100px;width: calc(100% - 5px);resize:none;border:1px solid #ccc;border-radius: 10px;}
 .content-wrapper .contact-content .contact-me .right .form-group textarea:focus{outline:none;border:1px solid #eee;box-shadow:0 0 5px #5c5c5c;}
 .content-wrapper .contact-content .contact-me .right button{width:100%;padding:10px;background-color:#f78b00;border:none;border-radius: 10px;color:white;}
+.content-wrapper .contact-content .end-text {display:block;font-size:38px;font-weight: 600;color: #5c5c5c;line-height: 4.0;}
 
-.content-wrapper .contact-content .typing-txt{display: none;}
-.content-wrapper .contact-content ul{list-style:none;}
-.content-wrapper .contact-content .typing ul li {font-size: 24px;color: #fff;line-height: 1.9;text-shadow: 2px 2px 2px gray;}
-.content-wrapper .contact-content .typing ul li.on {  display: inline-block; animation-name: cursor; animation-duration: 0.3s; animation-iteration-count: infinite; }
-@keyframes cursor{ 
-  0%{border-right: 1px solid #fff} 
-  50%{border-right: 1px solid #5c5c5c} 
-  100%{border-right: 1px solid #fff} 
-}
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
 @media all and (max-width:767px) { 
@@ -234,16 +226,19 @@ body {width: 100%;height: 100%;font-family: 'Open Sans', sans-serif;overflow-x: 
   .content-wrapper .contact-content .contact-me {flex-direction: column;}
   .content-wrapper .contact-content .contact-me .left{width: 100%;}
   .content-wrapper .contact-content .contact-me .right {width: 100%;}
+  .content-wrapper .contact-content .end-text {font-size:24px;}
 }
 
 @media all and (max-width:480px) {
   .slider .swiper-slide .text-box {padding: 0 30px;}
   .slider .swiper-slide .text-box .name {margin:35px 0 15px;}
 
+  .content-wrapper .about-content::before {top: 0;}
   .content-wrapper .about-content .flex {height: calc(100% - 180px);}
   .content-wrapper .about-content .flex .img {height: 200px;}
   .content-wrapper .about-content .flex .img img {width: 100%;height: 100%;}
 
+  .content-wrapper .work-content::before {top: 0;}
   .content-wrapper .work-content .work-swiper {height: 90%;}
   .content-wrapper .work-content .work-swiper .item .inner .f-content {height: 75%;}
   .content-wrapper .work-content .work-swiper .item .inner .f-content .title {font-size: 18px;}
@@ -252,9 +247,18 @@ body {width: 100%;height: 100%;font-family: 'Open Sans', sans-serif;overflow-x: 
   .content-wrapper .work-content .work-swiper .item .inner .text .flex {flex-direction: column;align-items: start;}
   .content-wrapper .work-content .work-swiper .item .inner .text .sub {font-size: 14px;}
 
+  .content-wrapper .skill-content::before {top: 0;}
   .content-wrapper .skill-content .inner ul li div h3::before {height: 65px;}
   .content-wrapper .skill-content .inner ul li div h3 {font-size: 20px;line-height: 65px;}
   .content-wrapper .skill-content .inner ul li div h3 strong {font-size: 30px;}
   .content-wrapper .skill-content .inner ul li div h4 {font-size: 14px;padding-bottom:13px;}
   .content-wrapper .skill-content .inner ul li .right .skillbar {display: none;}
+
+  .content-wrapper .contact-content {height: auto;}
+  .content-wrapper .contact-content::before {top:0;}
+  .content-wrapper .contact-content .contact-me .left .card {padding:10px 5px;margin-bottom: 15px;}
+  .content-wrapper .contact-content .contact-me .form-group {margin-bottom:10px;}
+  .content-wrapper .contact-content .contact-me .right .form-group label {margin-bottom: 10px;}
+  .content-wrapper .contact-content .container {margin-bottom: 0;}
+  .content-wrapper .contact-content .end-text {font-size:16px;}
 }
